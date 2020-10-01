@@ -1,4 +1,5 @@
 import LandingPage from 'pages/LandingPage';
+import Example from 'pages/Example';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import "../src/assets/scss/style.scss";
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/" component={LandingPage}></Route>
+        <Route path="/example" component={Example}></Route>
       </Router>
     </div>
   );
